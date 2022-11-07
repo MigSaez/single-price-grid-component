@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+/* :root (mayor especificidad) == html */
+:root {
+    --color-primario1: hsl(179, 62%, 43%);
+    --color-primario2: hsl(71, 73%, 54%);
+    --color-secundario1: hsl(204, 43%, 93%);
+    --color-secundario2: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--color-secundario1);
+}
+
+.main-container{
+    /* width: 1440px; */
+    max-width: 900px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seccion-principal{
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.seccion-principal-text{
+    color: var(--color-secundario2);
+}
+
+.titulo-principal{
+    color: var(--color-primario1);
+}
+
+.titulo-secundario{
+    color: var(--color-primario2);
+}
+
+.secciones{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.secciones>section{
+    /* width: 50%; */
+    flex-basis 50%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.seccion{
+    padding: 10px 25px;
+}
+
+.seccion-text{
+    color: var(--color-secundario1);
+}
+
+.seccion-text-precio{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subscripcion{
+    background-color: var(--color-primario1);
+    border-bottom-left-radius: 10px;
+    vertical-align: middle;
+}
+
+.why{
+    background-color: hsl(179, 68%, 43%);
+    border-bottom-right-radius: 10px;
+}
+
+.boton{
+    background-color: var(--color-primario2);
+    color: white;
+    font-weight: bolder;
+    border-style: none;
+    padding: 15px 60px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+}
+
+.boton:hover{
+    transform: scale(.9);
+}
+
+ul{
+    padding-left: 0;
+    list-style-type: none;
+}
